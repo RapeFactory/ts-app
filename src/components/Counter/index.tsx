@@ -18,7 +18,7 @@ interface IProps {
 
 class Counter extends Component<IProps, IState> {
   state = {
-    count: 0,
+    count: Math.floor(Math.random() * 20) - 10,
   };
 
   static propTypes = {
