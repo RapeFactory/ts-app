@@ -9,6 +9,10 @@
   border-radius: 50%;
 }
 
+.App-logo:active {
+  animation: App-logo-spin infinite 5s ease;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +26,47 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Counter button{
+  background-color: #282c34;
+  color: #fff;
+  border: none;
+  font-size: inherit;
+}
+
+.Counter button:hover{
+  color: #61dafb;
+}
+
+.Counter button::before{
+  margin-right: 10px;
+  content: "|";
+  color: #61dafb;
+}
+
+.Counter button:first-of-type:before{
+  content: "";
+}
+
+.counter{
+  border-radius: 50%;
+  border: 2px solid #61dafb;
+  background-color: #282c34;
+  width: 1vh;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 125px;
+}
+.counter p{
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-size: inherit;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 @keyframes App-logo-spin {
